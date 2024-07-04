@@ -23,7 +23,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Yohn\\Build\\": "src/Build"
+			"Yohn\\Build\\": "Build"
 		}
 	}
 }
