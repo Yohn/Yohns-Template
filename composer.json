@@ -15,12 +15,12 @@
 		"myjw3b/links": "*",
 		"myjw3b/file-writing": "*"
 	},
-	"authors": {
+	"authors": [{
 		"name": "John Brittain III",
 		"email": "Yohn@coming-soon.com",
 		"homepage": "https://github.com/Yohn",
 		"role": "Developer"
-	},
+	}],
 	"autoload": {
 		"psr-4": {
 			"Yohn\\Build\\": "Build"
