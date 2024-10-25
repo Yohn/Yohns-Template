@@ -3,7 +3,7 @@ Everytime I make a new repo, I'm always doing the same thing in the beginning, s
 
 ### Please look at [Package](package.json) and [Composer](composer.json) files to see all thats included.
 
-> [!NOTE] You need to-do
+> ## You need To:
 > Update your files in the [Config](lib/Config/) directory
 
 ### Geo IP Info
@@ -18,15 +18,15 @@ Were also using IPInfo
 
 # Yohns
 
-* [Yohn](Yohn.md)
-* [Errors\Err](Errors\Err.md)
-* [Security\Honeypot](Security\Honeypot.md)
-* [Security\Restrict](Security\Restrict.md)
-* [Security\FindingNemo\FindingNemo](Security\FindingNemo\FindingNemo.md)
-* [Security\FindingNemo\Hash](Security\FindingNemo\Hash.md)
-* [Security\FindingNemo\NemosCookie](Security\FindingNemo\NemosCookie.md)
-* [Security\FindingNemo\NemosGeoData_SQL](Security\FindingNemo\NemosGeoData_SQL.md)
-* [Services\E](Services\E.md)
-* [Services\Mail](Services\Mail.md)
-* [Utils\ajaxJson](Utils\ajaxJson.md)
-* [Utils\Plugable](Utils\Plugable.md)
+* [Yohn](docs/Yohn.md)
+* [Errors\Err](docs/Errors/Err.md)
+* [Security\Honeypot](docs/Security/Honeypot.md)
+* [Security\Restrict](docs/Security/Restrict.md)
+* [Security\FindingNemo\FindingNemo](docs/Security/FindingNemo/FindingNemo.md)
+* [Security\FindingNemo\Hash](docs/Security/FindingNemo/Hash.md)
+* [Security\FindingNemo\NemosCookie](docs/Security/FindingNemo/NemosCookie.md)
+* [Security\FindingNemo\NemosGeoData_SQL](docs/Security/FindingNemo/NemosGeoData_SQL.md)
+* [Services\E](docs/Services/E.md)
+* [Services\Mail](docs/Services/Mail.md)
+* [Utils\ajaxJson](docs/Utils/ajaxJson.md)
+* [Utils\Plugable](docs/Utils/Plugable.md)
