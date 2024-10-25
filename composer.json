@@ -6,17 +6,21 @@
 	"type": "project",
 	"require": {
 		"php": ">=8",
-		"myjw3b/core": "*",
-		"myjw3b/icons": "*",
-		"myjw3b/helpful": "*",
+		"htmlawed/htmlawed-class": "^1.2",
+		"michelf/php-markdown": "dev-lib",
+		"myjw3b/helpful": "^2.0",
 		"myjw3b/php-bootstrap-form-class": "*",
 		"myjw3b/php-pdo-chainer": "*",
-		"myjw3b/language": "*",
-		"myjw3b/links": "*",
-		"myjw3b/file-writing": "*"
+		"yohns/config":"^1.0"
 	},
 	"require-dev": {
-		"friendsofphp/php-cs-fixer": "^3.59"
+		"phpstan/phpstan": "^1.12",
+		"clean/phpdoc-md": "^0.19"
+	},
+	"config": {
+		"preferred-install": "dist",
+		"sort-packages": true,
+		"optimize-autoloader": true
 	},
 	"authors": [{
 		"name": "John Brittain III",
@@ -26,7 +30,36 @@
 	}],
 	"autoload": {
 		"psr-4": {
-			"Yohn\\Build\\": "Build"
+			"Yohns\\": "lib/Yohns"
+		}
+	},
+	"scripts": {
+		"analyse": "phpstan analyse",
+		"test": "phpunit tests",
+		"phpdoc": "phpdoc-md",
+		"dump": "composer dump-autoload"
+	},
+	"repositories": {
+		"htmlawed": {
+			"type": "composer",
+			"url": "https://www.bioinformatics.org/phplabware/downloads/"
+		}
+	},
+	"yohn-removed": {
+		"require-dev":{
+			"clean/phpdoc-md": "^0.19"
+		},
+		"require":{
+			"myjw3b/icons": "*",
+			"myjw3b/language": "*",
+			"myjw3b/links": "*",
+			"myjw3b/file-writing": "dev-main",
+			"utopia-php/pay": "dev-main",
+			"utopia-php/fetch": "dev-main",
+			"utopia-php/messaging": "dev-main",
+			"josantonius/cookie": "dev-main",
+			"josantonius/session": "dev-main",
+			"chillerlan/php-qrcode": "5.0.2"
 		}
 	}
 }

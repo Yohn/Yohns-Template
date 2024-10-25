@@ -1,35 +1,73 @@
 {
-	"name": "yohn/yohns-template",
+	"name": "yohns",
 	"description": "A good starting point for future projects",
 	"dependencies": {
 		"@tkrotoff/bootstrap-floating-label": "0.12.2",
-		"bootstrap": "^5.3.3"
+		"bootstrap": "^5.3.3",
+    "@guxmartin/imodal": "^5.0.0-beta.4",
+    "bootstrap-icons": "^1.11.3",
+    "sortablejs": "^1.15.3",
+    "use-bootstrap-select": "^2.2.0",
+    "use-bootstrap-toaster": "^1.0.3"
 	},
-	"copyFiles": [{
-			"from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-			"to": "assets/vendor/js/bootstrap.bundle.min.js"
-		}, {
-			"from": "node_modules/bootstrap/dist/css/bootstrap.min.css",
-			"to": "assets/vendor/css/bootstrap.min.css"
-		}
-	],
-	"copyFilesSettings": {
-		"whenFileExists": "notify-about-available-change",
-		"addReferenceToSourceOfOrigin": true,
-		"ignoreDotFilesAndFolders": true,
-		"removeSourceMappingURL": true,
-		"minifyJs": false,
-		"minifyJsTerserOptions": {
-			"compress": {
-				"sequences": false
-			},
-			"mangle": false,
-			"format": {
-				"semicolons": false
-			}
-		}
-	},
-	"browserslist": [
-		"defaults"
-	]
+  "scripts": {
+    "test": "null",
+    "copyFiles": "copy-files-from-to",
+    "check": "ncu -u"
+  },
+  "copyFiles": [
+    {
+      "from": "node_modules/sortablejs/Sortable.min.js",
+      "to": "www/assets/js/Sortable.min.js"
+    },
+    {
+      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "to": "www/assets/js/bootstrap.bundle.min.js"
+    },
+    {
+      "from": "node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "to": "www/assets/css/bootstrap.min.css"
+    },
+    {
+      "from": "node_modules/use-bootstrap-toaster/dist/use-bootstrap-toaster.min.js",
+      "to": "www/assets/js/use-bootstrap-toaster.min.js"
+    },
+    {
+      "from": "node_modules/use-bootstrap-select/dist/use-bootstrap-select.min.js",
+      "to": "www/assets/js/use-bootstrap-select.min.js"
+    },
+    {
+      "from": "node_modules/bootstrap-icons/font/fonts/*",
+      "to": "www/assets/fonts"
+    },
+    {
+      "from": "node_modules/@guxmartin/imodal/dist/*",
+      "to": "www/assets/js/imodal/",
+      "minifyJs": true
+    }
+  ],
+  "copyFilesSettings": {
+    "whenFileExists": "notify-about-available-change",
+    "addReferenceToSourceOfOrigin": true,
+    "ignoreDotFilesAndFolders": true,
+    "removeSourceMappingURL": true,
+    "minifyJs": false,
+    "minifyJsTerserOptions": {
+      "compress": {
+        "sequences": false
+      },
+      "mangle": false,
+      "format": {
+        "semicolons": false
+      }
+    }
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.10.0"
+  }
 }
